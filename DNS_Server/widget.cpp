@@ -6,6 +6,7 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
+    setFixedSize(361,67);
     mServer = new myServer(this);
 }
 
@@ -21,14 +22,6 @@ void Widget::on_btnIniciar_clicked()
     else
         QMessageBox::information(this, "Servidor", "Iniciado.");
 }
-
-
-
-void Widget::on_btnEnviar_clicked()
-{
-    mServer->send(ui->txfMensaje->text());
-}
-
 
 
 void Widget::on_btnSalir_clicked()

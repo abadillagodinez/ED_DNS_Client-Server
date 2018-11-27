@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->listAver->setVisible(false);
+    setFixedSize(400, 295);
     mSocket = new QTcpSocket(this);
 
     connect(mSocket, &QTcpSocket::readyRead, [&]()
@@ -33,6 +34,7 @@ void MainWindow::on_btnAbrir_2_clicked()
 {
     if(ui->listAver->text() == "1")
     {
+        Viewer *view = new Viewer();
         view->setURL(ui->txfURL->text().toStdString());
         view->visible();
         view->setVisible(true);

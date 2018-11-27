@@ -31,8 +31,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Viewer *view = new Viewer();
-
     QTcpSocket *mSocket;
     QString respuesta = "";
 

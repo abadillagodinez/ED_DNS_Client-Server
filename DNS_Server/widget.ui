@@ -7,71 +7,66 @@
     <x>0</x>
     <y>0</y>
     <width>361</width>
-    <height>118</height>
+    <height>67</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Widget</string>
+   <string>Server</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QSpinBox" name="sbxPuerto">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>74</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>65535</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSalir">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>21</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblPuerto">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>10</y>
-     <width>321</width>
-     <height>90</height>
+     <y>20</y>
+     <width>51</width>
+     <height>21</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" colspan="2">
-     <widget class="QLabel" name="lblMensaje">
-      <property name="text">
-       <string>Mensaje:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QPushButton" name="btnIniciar">
-      <property name="text">
-       <string>Iniciar</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="3">
-     <widget class="QPushButton" name="btnEnviar">
-      <property name="text">
-       <string>Enviar</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="4">
-     <widget class="QPushButton" name="btnSalir">
-      <property name="text">
-       <string>Salir</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2" colspan="3">
-     <widget class="QLineEdit" name="txfMensaje"/>
-    </item>
-    <item row="2" column="2" colspan="3">
-     <widget class="QSpinBox" name="sbxPuerto">
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>65535</number>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0" colspan="2">
-     <widget class="QLabel" name="lblPuerto">
-      <property name="text">
-       <string>Puerto:</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string>Puerto:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnIniciar">
+   <property name="geometry">
+    <rect>
+     <x>174</x>
+     <y>21</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Iniciar</string>
+   </property>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

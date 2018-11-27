@@ -20,6 +20,7 @@ myServer::myServer(QObject *parent)
     splay = new SplayTree();
     leerDominios();
     splay->print();
+    qDebug("\n----------------------------------\n");
 }
 
 void myServer::send(const QString &ms)
@@ -36,11 +37,17 @@ void myServer::recieve(const QString &ms)
 {
     splay->search(ms.toStdString());
     if(splay->getRoot()->getDominio() == ms.toStdString())
+    {
+        splay->print();
+        qDebug("\n----------------------------------\n");
         send("1");
+    }
     else
+    {
+        splay->print();
+        qDebug("\n----------------------------------\n");
         send("0");
-    qDebug("\n----------------------------------\n");
-    splay->print();
+    }
 }
 
 void myServer::leerDominios()

@@ -19,8 +19,6 @@ public:
 private slots:
     void on_btnIniciar_clicked();
 
-    void on_btnEnviar_clicked();
-
     void on_btnSalir_clicked();
 
 private:

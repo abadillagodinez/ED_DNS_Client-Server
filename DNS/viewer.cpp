@@ -6,6 +6,8 @@ Viewer::Viewer(QWidget *parent) :
     ui(new Ui::Viewer)
 {
     ui->setupUi(this);
+    setFixedSize(1280,720);
+    view->setFixedSize(1280,720);
 }
 
 Viewer::~Viewer()
