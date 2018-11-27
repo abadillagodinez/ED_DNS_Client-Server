@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DNS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="contBusqueda">
+      <property name="title">
+       <string>Búsqueda</string>
+      </property>
+      <widget class="QPushButton" name="btnAbrir">
+       <property name="geometry">
+        <rect>
+         <x>281</x>
+         <y>31</y>
+         <width>80</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txfURL">
+       <property name="geometry">
+        <rect>
+         <x>133</x>
+         <y>31</y>
+         <width>142</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDire">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>31</y>
+         <width>116</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Dirección buscar:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="listAver">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>70</y>
+         <width>251</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAbrir_2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>70</y>
+         <width>80</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Abrir</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="contConex">
+      <property name="title">
+       <string>Datos de conexión</string>
+      </property>
+      <widget class="QLabel" name="lblServidor">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>31</y>
+         <width>61</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Servidor:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPuerto">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>31</y>
+         <width>51</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Puerto:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txfServidor">
+       <property name="geometry">
+        <rect>
+         <x>92</x>
+         <y>31</y>
+         <width>142</width>
+         <height>25</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="sbxPuerto">
+       <property name="geometry">
+        <rect>
+         <x>297</x>
+         <y>31</y>
+         <width>74</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>65535</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnConectar">
+       <property name="geometry">
+        <rect>
+         <x>92</x>
+         <y>63</y>
+         <width>80</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Conectar</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

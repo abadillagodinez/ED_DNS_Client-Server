@@ -1,0 +1,10 @@
+www.google.com 172.217.8.100
+www.youtube.com 172.217.0.78
+www.facebook.com 31.13.67.35
+www.wish.com 18.209.233.199
+www.twitch.tv 151.101.206.167
+www.geeksforgeeks.org 13.35.115.119
+www.twitter.com 104.244.42.129
+www.stackoverflow.com 151.101.1.69
+web.whatsapp.com 157.240.14.52
+www.ucr.ac.cr 163.178.170.81
