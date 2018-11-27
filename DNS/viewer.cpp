@@ -17,7 +17,7 @@ Viewer::~Viewer()
 
 void Viewer::setURL(string URL)
 {
-    this->URL = QString::fromStdString(URL);
+    this->URL = QString("https://") + QString::fromStdString(URL);
 }
 
 void Viewer::visible()

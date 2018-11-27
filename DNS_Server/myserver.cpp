@@ -53,7 +53,7 @@ void myServer::recieve(const QString &ms)
 void myServer::leerDominios()
 {
     string linea;
-    ifstream archivo("/home/retr0/Escritorio/DNS_Server/dominios.txt");
+    ifstream archivo("/home/retr0/Escritorio/Estructuras de datos SII 2018/ED_DNS_Client-Server/DNS_Server/dominios.txt");
     while(getline(archivo, linea))
     {
         string domin = "";
