@@ -13,8 +13,7 @@ public:
     void send(const QString &ms);
     void recieve(const QString &ms);
     void recieveFromServer(const string &ms);
-
-    void setSocketToServer(QTcpSocket *pSocketToServer);
+    void conectar(const QString &direccion, int puerto);
 
 private:
     QTcpSocket *mSocket; //socket del cliente

@@ -18,6 +18,16 @@ myServer::myServer(QObject *parent)
        });
     });
 
+
+    mSocketToServer = new QTcpSocket(this);
+
+    //conexion con servidor
+    connect(mSocketToServer, &QTcpSocket::readyRead, [&]()
+    {
+        QTextStream T(mSocketToServer);
+        recieveFromServer(T.readAll().toStdString());
+    });
+
     splay = new SplayTree();
     leerDominios();
     splay->print();
@@ -113,9 +123,7 @@ void myServer::leerDominios()
     }
 }
 
-
-void myServer::setSocketToServer(QTcpSocket *pSocketToServer)
+void myServer::conectar(const QString &direccion, int puerto)
 {
-    mSocketToServer = pSocketToServer;
+    mSocketToServer->connectToHost(direccion, puerto);
 }
-
