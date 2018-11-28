@@ -27,7 +27,6 @@ private slots:
 private:
     Ui::Widget *ui;
     myServer *mServer;
-    QTcpSocket *mSocketToServer;
 };
 
 #endif // WIDGET_H

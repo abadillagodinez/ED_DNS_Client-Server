@@ -8,17 +8,6 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
     setFixedSize(408,168);
     mServer = new myServer(this);
-
-    mSocketToServer = new QTcpSocket(this);
-
-    //conexion con servidor
-    connect(mSocketToServer, &QTcpSocket::readyRead, [&]()
-    {
-        QTextStream T(mSocketToServer);
-        mServer->recieveFromServer(T.readAll().toStdString());
-    });
-
-    mServer->setSocketToServer(mSocketToServer);
 }
 
 Widget::~Widget()
@@ -42,6 +31,6 @@ void Widget::on_btnSalir_clicked()
 
 void Widget::on_btnConectar_clicked()
 {
-    mSocketToServer->connectToHost(ui->txfServidor->text(), ui->sbxPuerto_2->value());
+    mServer->conectar(ui->txfServidor->text(), ui->sbxPuerto_2->value());
     QMessageBox::information(this, "Cliente", "Conectado.");
 }
