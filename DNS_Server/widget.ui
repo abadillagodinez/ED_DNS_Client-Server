@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>361</width>
-    <height>67</height>
+    <width>408</width>
+    <height>168</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -67,6 +67,84 @@
    <property name="text">
     <string>Iniciar</string>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="contConex">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>382</width>
+     <height>105</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Datos de conexión</string>
+   </property>
+   <widget class="QLabel" name="lblServidor">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>31</y>
+      <width>61</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Servidor:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPuerto_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>31</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Puerto:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txfServidor">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>31</y>
+      <width>142</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="sbxPuerto_2">
+    <property name="geometry">
+     <rect>
+      <x>297</x>
+      <y>31</y>
+      <width>74</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>65535</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnConectar">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>63</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Conectar</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

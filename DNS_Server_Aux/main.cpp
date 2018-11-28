@@ -8,8 +8,7 @@
 using namespace std;
 int main(int argc, char *argv[])
 {
-    /* server 1
-    */
+    /* PROYECTO DEL SERVER #2 */
 
     QApplication a(argc, argv);
     Widget w;

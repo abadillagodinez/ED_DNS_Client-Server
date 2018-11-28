@@ -3,7 +3,7 @@
 #include "myserver.h"
 #include <QWidget>
 #include <QMessageBox>
-#include <QTcpSocket>
+#define PORT 5050
 
 namespace Ui {
 class Widget;
@@ -22,12 +22,9 @@ private slots:
 
     void on_btnSalir_clicked();
 
-    void on_btnConectar_clicked();
-
 private:
     Ui::Widget *ui;
     myServer *mServer;
-    QTcpSocket *mSocketToServer;
 };
 
 #endif // WIDGET_H

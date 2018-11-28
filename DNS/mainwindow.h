@@ -20,7 +20,6 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void consultar(const QString &ms);
-    void recieve(const QString &ms);
 
 private slots:
     void on_btnAbrir_clicked();

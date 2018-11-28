@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     setFixedSize(400, 295);
     mSocket = new QTcpSocket(this);
 
+    //conexion con el servidor al leer
     connect(mSocket, &QTcpSocket::readyRead, [&]()
     {
         QTextStream T(mSocket);
@@ -61,7 +62,3 @@ void MainWindow::on_btnConectar_clicked()
     }
 }
 
-void MainWindow::recieve(const QString &ms)
-{
-    respuesta = ms;
-}

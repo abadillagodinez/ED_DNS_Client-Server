@@ -3,7 +3,6 @@
 #include "splaytree.h"
 #include <fstream>
 #include <QTcpServer>
-#define PORT 5055
 
 class myServer : public QTcpServer
 {
@@ -12,13 +11,8 @@ public:
     explicit myServer(QObject *parent = 0);
     void send(const QString &ms);
     void recieve(const QString &ms);
-    void recieveFromServer(const string &ms);
-
-    void setSocketToServer(QTcpSocket *pSocketToServer);
-
 private:
-    QTcpSocket *mSocket; //socket del cliente
-    QTcpSocket *mSocketToServer;
+    QTcpSocket *mSocket_Server; //Lista pendiente de sockets
     SplayTree *splay;
     void leerDominios();
 
